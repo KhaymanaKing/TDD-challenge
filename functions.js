@@ -148,8 +148,9 @@ Output:
 */
 
 export function getLastItem(array) {
-    return array[array.lenth - 1];
+    return array[array.length - 1];
 }
+
 
 // This function should return a random number between 0 and 5. 
 
@@ -158,5 +159,5 @@ export function getLastItem(array) {
 // Ask yourself: even if you cannot predict the result exactly, what _do_ you know about what it should return? Use that expectation to write your test
 
 export function getRandomNumber() {
-    return true;
+    return Math.ceil(Math.random() * 5);
 }

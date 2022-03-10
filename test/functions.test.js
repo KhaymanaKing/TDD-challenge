@@ -2,8 +2,7 @@
 import { addExclamationPoints, 
     multiplyBySeven, multiplyBy12ThenHalve, divideThenMultiply, 
     returnAsAnArray, makeLuckyGreeting, getSecondItem, 
-    getLastItem,  
-    //getRandomNumber,
+    getLastItem, getRandomNumber,
     // myFunction,
 } from '../functions.js';
 
@@ -80,6 +79,20 @@ test('Return last item in an array', (expect) => {
     const actual = getLastItem(['kiwi', 'apple', 'orange', 'plum']);
 
     expect.deepEqual(actual, expected);
+});
+
+test('GetRandomNumber should be 1-5', (expect) => {
+    
+    
+    
+    const its12345 = actual === 1
+    || actual === 2 
+    || actual === 3
+    || actual === 4
+    || actual === 5;
+    const actual = getRandomNumber();
+
+    expect.equal(its12345, true);
 });
 
 // skip('this test should be skipped', (expect) => {

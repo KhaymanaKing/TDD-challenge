@@ -4,6 +4,7 @@
 
 Input:
 
+
 'bunny rabbit'
 
 Output: 
@@ -12,8 +13,9 @@ Output:
 
 */
 
-export function addExclamationPoints() {
-    return true;
+
+export function addExclamationPoints(string) {
+    return string + '!!!';
 }
 
 // This function should take in a number and multiply it by seven
@@ -28,8 +30,8 @@ Output:
 28 
 */
 
-export function multiplyBySeven(num) {
-    return true;
+export function multiplyBySeven(num1) {
+    return num1 * 7;
 }
 
 // This function should take in a number and multiply it by twelve then cut the result in half

@@ -1,7 +1,8 @@
 // IMPORT MODULES under test here:
 import { addExclamationPoints, 
     multiplyBySeven, multiplyBy12ThenHalve, divideThenMultiply, 
-    // returnAsAnArray, makeLuckyGreeting, getSecondItem, 
+    returnAsAnArray, 
+    // makeLuckyGreeting, getSecondItem, 
     // getLastItem,  getRandomNumber,
     // myFunction,
 } from '../functions.js';
@@ -47,6 +48,14 @@ test('Takes 3 numbers divides divides the 1st by the 2nd and then * by the 3rd',
     const actual = divideThenMultiply(8, 4, 5);
 
     expect.equal(actual, expected);
+});
+
+test('returns 3 numbers as an array', (expect) => {
+    const expected = [8, 4, 5];
+
+    const actual = returnAsAnArray(8, 4, 5);
+
+    expect.deepEqual(actual, expected);
 });
 
 // skip('this test should be skipped', (expect) => {

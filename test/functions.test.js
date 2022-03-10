@@ -1,9 +1,9 @@
 // IMPORT MODULES under test here:
 import { addExclamationPoints, 
-    multiplyBySeven, // multiplyBy12ThenHalve, 
+    multiplyBySeven, multiplyBy12ThenHalve, 
     // divideThenMultiply, returnAsAnArray, makeLuckyGreeting, getSecondItem, 
     // getLastItem,  getRandomNumber,
-    myFunction,
+    // myFunction,
 } from '../functions.js';
 
 const { test, skip } = QUnit;
@@ -25,13 +25,21 @@ test('add !!! to the end of string', (expect) => {
 
 });
 test('multiplies number by 7', (expect) => {
-    const expected = 21;
 
-    const actual = multiplyBySeven(3 * 7);
+    const expected = 28;
+
+    const actual = multiplyBySeven(4);
 
     expect.equal(actual, expected);
 });
 
+test('takes a number x12 and then divides in 1/2', (expect) => {
+    const expected = true;
+
+    const actual = multiplyBy12ThenHalve();
+
+    expect.equal(actual, expected);
+});
 
 // skip('this test should be skipped', (expect) => {
 //     const expected = true;

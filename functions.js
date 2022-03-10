@@ -30,8 +30,8 @@ Output:
 28 
 */
 
-export function multiplyBySeven(num1) {
-    return num1 * 7;
+export function multiplyBySeven(num) {
+    return num * 7;
 }
 
 // This function should take in a number and multiply it by twelve then cut the result in half

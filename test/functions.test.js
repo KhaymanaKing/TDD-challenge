@@ -82,16 +82,13 @@ test('Return last item in an array', (expect) => {
 });
 
 test('GetRandomNumber should be 1-5', (expect) => {
-    
-    
-    
-    const its12345 = actual === 1
-    || actual === 2 
-    || actual === 3
-    || actual === 4
-    || actual === 5;
     const actual = getRandomNumber();
+    
+    const its12345 = [1, 2, 3, 4, 5].includes(actual);
+    
+    
 
+    expect.equal('number', typeof actual);
     expect.equal(its12345, true);
 });
 

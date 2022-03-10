@@ -48,7 +48,7 @@ Output:
 */
 
 export function multiplyBy12ThenHalve(num) {
-    return true;
+    return (num * 12) / 2;
 }
 
 
@@ -65,7 +65,7 @@ Output:
 */
 
 export function divideThenMultiply(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    return firstNumber / secondNumber * thirdNumber;
 }
 
 

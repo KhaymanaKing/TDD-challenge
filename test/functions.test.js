@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 import { addExclamationPoints, 
-    multiplyBySeven, multiplyBy12ThenHalve, 
-    // divideThenMultiply, returnAsAnArray, makeLuckyGreeting, getSecondItem, 
+    multiplyBySeven, multiplyBy12ThenHalve, divideThenMultiply, 
+    // returnAsAnArray, makeLuckyGreeting, getSecondItem, 
     // getLastItem,  getRandomNumber,
     // myFunction,
 } from '../functions.js';
@@ -34,9 +34,17 @@ test('multiplies number by 7', (expect) => {
 });
 
 test('takes a number x12 and then divides in 1/2', (expect) => {
-    const expected = true;
+    const expected = 24;
 
-    const actual = multiplyBy12ThenHalve();
+    const actual = multiplyBy12ThenHalve(4);
+
+    expect.equal(actual, expected);
+});
+
+test('Takes 3 numbers divides divides the 1st by the 2nd and then * by the 3rd', (expect) => {
+    const expected = 10;
+
+    const actual = divideThenMultiply(8, 4, 5);
 
     expect.equal(actual, expected);
 });

@@ -1,8 +1,7 @@
 // IMPORT MODULES under test here:
 import { addExclamationPoints, 
     multiplyBySeven, multiplyBy12ThenHalve, divideThenMultiply, 
-    returnAsAnArray, makeLuckyGreeting,
-    // , getSecondItem, 
+    returnAsAnArray, makeLuckyGreeting, getSecondItem, 
     // getLastItem,  getRandomNumber,
     // myFunction,
 } from '../functions.js';
@@ -64,6 +63,14 @@ test('Returns sum of 2 numbers as "todays lucky number" ', (expect) => {
     const actual = makeLuckyGreeting(8, 4);
 
     expect.equal(actual, expected);
+});
+
+test('Return the second item in the array', (expect) => {
+    const expected = 'apple';
+
+    const actual = getSecondItem(['kiwi', 'apple', 'orange', 'plum']);
+
+    expect.deepEqual(actual, expected);
 });
 
 // skip('this test should be skipped', (expect) => {
